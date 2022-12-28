@@ -1,0 +1,55 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    padding-top: 35vh ;
+}
+section a {
+    display: block;
+    width: max-content;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+}
+
+#red {
+    background-color: red;
+}
+#green {
+    background-color: green;
+}
+#yellow {
+    background-color: yellow;
+}
+
+.animation{
+    animation-name: dart;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes dart {
+    0% {
+        transform: translate(0px,0px);
+    }
+    50% {
+        transform: translate(0px,30px);
+        color: rgba(3, 2, 2,0.2);
+    }
+    100% {
+        transform: translate(0px,0px);
+
+    }
+    
+}
